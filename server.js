@@ -9,6 +9,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
+    console.log('Received body:', JSON.stringify(req.body));
     res.send(req.body);
 });
 
